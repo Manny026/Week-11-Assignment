@@ -21,7 +21,7 @@ public abstract class DbConnection {
 		
 		try {
 			Connection conn = DriverManager.getConnection(url);
-			System.out.println("Connectiong Succesful!");
+			System.out.println("Connecting Succesful!");
 			return conn;
 		} catch (SQLException e) {
 			System.out.println("Error! Connection failed...");
