@@ -18,6 +18,8 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Objects;
 
+import project.entity.Project;
+
 /**
  * This class contains utility methods for the DAO class.
  * 
@@ -40,12 +42,9 @@ public abstract class DaoBase {
   /**
    * Commit the transaction. This will write all the changes, if any, to the database.
    * 
-   * @param conn The connection on which to commit the transaction.
+   * @param project The connection on which to commit the transaction.
    * @throws SQLException Thrown if an error occurs committing the transaction.
    */
-  protected void commitTransaction(Connection conn) throws SQLException {
-    conn.commit();
-  }
 
   /**
    * Rolls back the changes so that nothing is committed.
